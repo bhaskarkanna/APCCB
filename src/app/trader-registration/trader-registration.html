@@ -1,0 +1,1086 @@
+<!-- ================= APCCB HEADER ================= -->
+
+<header class="app-header">
+
+    <div class="header-left">
+
+        <img
+            src="/images/apccb-logo.png"
+            alt="APCCB Logo">
+
+        <div>
+
+            <h1>Andhra Pradesh Carbon Credit Bank</h1>
+
+            <p>Carbon Credit Registration & Trading System</p>
+
+        </div>
+
+    </div>
+
+    <div class="portal-badge">
+
+        APCCB Portal
+
+    </div>
+
+</header>
+
+<!-- ================= MAIN CARD ================= -->
+
+<div class="wizard-card">
+
+    <!-- ================= HEADER ================= -->
+
+        <div class="wizard-header">
+
+            <div>
+
+                <h2>
+                    TRADER REGISTRATION
+                </h2>
+
+            </div>
+
+
+        </div>
+
+    
+    <!-- ================= BODY ================= -->
+
+    <div class="wizard-body">
+
+        <div class="section-title center-title">
+
+            <h3>
+
+                Trader Information
+
+            </h3>
+
+            <span>
+
+                Select your trader registration type
+
+            </span>
+
+        </div>
+
+       <!-- ================= MODERN TRADER TYPE ================= -->
+
+<div class="modern-section">
+
+    <div class="section-left">
+
+        <div class="section-icon">
+
+            👤
+
+        </div>
+
+        <div>
+
+            <h3>
+
+                Trader Type
+
+            </h3>
+
+            <p>
+
+                Select your trader registration type
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="section-right">
+
+        <div class="modern-card-grid">
+
+            <div
+                class="modern-card"
+                [class.active]="selectedTraderType === 'Individual Trader'"
+                (click)="selectTraderType('Individual Trader')">
+
+                <div class="radio-circle"></div>
+
+                <div class="modern-icon">
+
+                    👤
+
+                </div>
+
+                <h4>
+
+                    Individuals 
+
+                </h4>
+
+                <p>
+
+                    Personal carbon trader
+
+                </p>
+
+            </div>
+
+            <div
+                class="modern-card"
+                [class.active]="selectedTraderType === 'Company Trader'"
+                (click)="selectTraderType('Company Trader')">
+
+                <div class="radio-circle"></div>
+
+                <div class="modern-icon">
+
+                    🏢
+
+                </div>
+
+                <h4>
+
+                Coporate Entities
+
+                </h4>
+
+                <p>
+
+                    Business organization
+
+                </p>
+
+            </div>
+
+            <div
+                class="modern-card"
+                [class.active]="selectedTraderType === 'Government Agency'"
+                (click)="selectTraderType('Government Agency')">
+
+                <div class="radio-circle"></div>
+
+
+                <div class="modern-icon">
+
+                    🏛️
+
+                </div>
+
+                <h4>
+
+                    Government and Public Entities
+
+                </h4>
+
+                <p>
+
+                    Government department
+
+                </p>
+
+            </div>  
+
+        </div>
+
+    </div>
+
+</div>
+
+       <!-- ================= MODERN TRADER DETAILS ================= -->
+
+<div class="modern-section">
+
+    <div class="section-left">
+
+        <div class="section-icon">
+
+            📋
+
+        </div>
+
+        <div>
+
+            <h3>
+
+                Trader Details
+
+            </h3>
+
+            <p>
+
+                Enter trader registration details and business information.
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="section-right">
+
+        <div class="modern-form-grid">
+
+            <div class="modern-form-group">
+
+                <label>
+
+                    Trader Name <span>*</span>
+
+                </label>
+
+                <div class="input-box">
+
+                    <span class="input-icon">👤</span>
+
+                    <input
+                        type="text"
+                        placeholder="Enter trader name">
+
+                </div>
+
+            </div>
+
+            <div class="modern-form-group">
+
+                <label>
+
+                    Company Name
+
+                </label>
+
+                <div class="input-box">
+
+                    <span class="input-icon">🏢</span>
+
+                    <input
+                        type="text"
+                        placeholder="Enter company name">
+
+                </div>
+
+            </div>
+
+            <div class="modern-form-group">
+
+                <label>
+
+                    PAN Number <span>*</span>
+
+                </label>
+
+                <div class="input-box">
+
+                    <span class="input-icon">🪪</span>
+
+                    <input
+                        type="text"
+                        placeholder="ABCDE1234F">
+
+                </div>
+
+            </div>
+
+            <div class="modern-form-group">
+
+                <label>
+
+                    GST Number
+
+                </label>
+
+                <div class="input-box">
+
+                    <span class="input-icon">🧾</span>
+
+                    <input
+                        type="text"
+                        placeholder="Enter GST Number">
+
+                </div>
+
+            </div>
+
+            <div class="modern-form-group">
+
+                <label>
+
+                    Email Address <span>*</span>
+
+                </label>
+
+                <div class="input-box">
+
+                    <span class="input-icon">📧</span>
+
+                    <input
+                        type="email"
+                        placeholder="Enter email address">
+
+                </div>
+
+            </div>
+
+            <div class="modern-form-group">
+
+                <label>
+
+                    Mobile Number <span>*</span>
+
+                </label>
+
+                <div class="input-box">
+
+                    <span class="input-icon">📱</span>
+
+                    <input
+                        type="tel"
+                        placeholder="Enter mobile number">
+
+                </div>
+
+            </div>
+
+            <div class="modern-form-group">
+
+                <label>
+
+                    Company Registration ID
+
+                </label>
+
+                <div class="input-box">
+
+                    <span class="input-icon">📄</span>
+
+                    <input
+                        type="text"
+                        placeholder="Enter company registration ID">
+
+                </div>
+
+            </div>
+
+            <div class="modern-form-group">
+
+                <label>
+
+                    Experience
+
+                </label>
+
+                <div class="input-box">
+
+                    <span class="input-icon">⭐</span>
+
+                    <select>
+
+                        <option>Select Experience</option>
+
+                        <option>0 - 1 Year</option>
+
+                        <option>1 - 3 Years</option>
+
+                        <option>3 - 5 Years</option>
+
+                        <option>More than 5 Years</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+        
+      <!-- ================= MODERN TRADING PREFERENCES ================= -->
+
+<div class="modern-section">
+
+    <div class="section-left">
+
+        <div class="section-icon">
+
+            📈
+
+        </div>
+
+        <div>
+
+            <h3>
+
+                Trading Preferences
+
+            </h3>
+
+            <p>
+
+                Choose your preferred carbon credit trading activity.
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="section-right">
+
+        <div class="modern-card-grid">
+
+            <div
+                class="modern-card"
+                [class.active]="selectedTradingPreference === 'Buy Credits'"
+                (click)="selectTradingPreference('Buy Credits')">
+
+                <div class="radio-circle"></div>
+
+                <div class="modern-icon">
+
+                    💰
+
+                </div>
+
+                <h4>
+
+                    Buy Credits
+
+                </h4>
+
+                <p>
+
+                    Purchase verified carbon credits.
+
+                </p>
+
+            </div>
+
+            <div
+                class="modern-card"
+                [class.active]="selectedTradingPreference === 'Sell Credits'"
+                (click)="selectTradingPreference('Sell Credits')">
+
+                <div class="radio-circle"></div>
+
+                <div class="modern-icon">
+
+                    📤
+
+                </div>
+
+                <h4>
+
+                    Sell Credits
+
+                </h4>
+
+                <p>
+
+                    Sell available carbon credits.
+
+                </p>
+
+            </div>
+
+            <div
+                class="modern-card"
+                [class.active]="selectedTradingPreference === 'Carbon Exchange'"
+                (click)="selectTradingPreference('Carbon Exchange')">
+
+                <div class="radio-circle"></div>
+
+                <div class="modern-icon">
+
+                    🌍
+
+                </div>
+
+                <h4>
+
+                    Carbon Exchange
+
+                </h4>
+
+                <p>
+
+                    Participate in the exchange market.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+    <!-- ================= MODERN BANK DETAILS ================= -->
+
+<div class="modern-section">
+
+    <div class="section-left">
+
+        <div class="section-icon">
+
+            🏦
+
+        </div>
+
+        <div>
+
+            <h3>
+
+                Bank Details
+
+            </h3>
+
+            <p>
+
+                Enter your bank account information for carbon credit transactions.
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="section-right">
+
+        <div class="modern-form-grid">
+
+            <div class="modern-form-group">
+
+                <label>
+
+                    Account Holder Name <span>*</span>
+
+                </label>
+
+                <div class="input-box">
+
+                    <span class="input-icon">👤</span>
+
+                    <input
+                        type="text"
+                        placeholder="Enter Account Holder Name">
+
+                </div>
+
+            </div>
+
+            <div class="modern-form-group">
+
+                <label>
+
+                    Bank Name <span>*</span>
+
+                </label>
+
+                <div class="input-box">
+
+                    <span class="input-icon">🏦</span>
+
+                    <input
+                        type="text"
+                        placeholder="Enter Bank Name">
+
+                </div>
+
+            </div>
+
+            <div class="modern-form-group">
+
+                <label>
+
+                    Account Number <span>*</span>
+
+                </label>
+
+                <div class="input-box">
+
+                    <span class="input-icon">💳</span>
+
+                    <input
+                        type="text"
+                        placeholder="Enter Account Number">
+
+                </div>
+
+            </div>
+
+            <div class="modern-form-group">
+
+                <label>
+
+                    Confirm Account Number <span>*</span>
+
+                </label>
+
+                <div class="input-box">
+
+                    <span class="input-icon">✔️</span>
+
+                    <input
+                        type="text"
+                        placeholder="Confirm Account Number">
+
+                </div>
+
+            </div>
+
+            <div class="modern-form-group">
+
+                <label>
+
+                    IFSC Code <span>*</span>
+
+                </label>
+
+                <div class="input-box">
+
+                    <span class="input-icon">🏛️</span>
+
+                    <input
+                        type="text"
+                        placeholder="SBIN0001234">
+
+                </div>
+
+            </div>
+
+            <div class="modern-form-group">
+
+                <label>
+
+                    Branch Name
+
+                </label>
+
+                <div class="input-box">
+
+                    <span class="input-icon">📍</span>
+
+                    <input
+                        type="text"
+                        placeholder="Enter Branch Name">
+
+                </div>
+
+            </div>
+
+            <div class="modern-form-group">
+
+                <label>
+
+                    Account Type
+
+                </label>
+
+                <div class="input-box">
+
+                    <span class="input-icon">💼</span>
+
+                    <select>
+
+                        <option>Select Account Type</option>
+
+                        <option>Savings</option>
+
+                        <option>Current</option>
+
+                        <option>Business</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+            <div class="modern-form-group">
+
+                <label>
+
+                    UPI ID
+
+                </label>
+
+                <div class="input-box">
+
+                    <span class="input-icon">📱</span>
+
+                    <input
+                        type="text"
+                        placeholder="example@upi">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+  <!-- ================= MODERN DOCUMENT UPLOAD ================= -->
+
+<div class="modern-section">
+
+    <div class="section-left">
+
+        <div class="section-icon">
+
+            📂
+
+        </div>
+
+        <div>
+
+            <h3>
+
+                Document Upload
+
+            </h3>
+
+            <p>
+
+                Upload all required documents for trader verification.
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="section-right">
+
+        <div class="upload-grid">
+
+            <!-- PAN -->
+
+            <div class="upload-card">
+
+                <div class="upload-icon">
+
+                    🪪
+
+                </div>
+
+                <h4>
+
+                    PAN Card
+
+                </h4>
+
+                <p>
+
+                    PDF / JPG / PNG
+
+                </p>
+
+                <input
+                    type="file"
+                    accept=".pdf,.jpg,.jpeg,.png">
+
+            </div>
+
+            <!-- Aadhaar -->
+
+            <div class="upload-card">
+
+                <div class="upload-icon">
+
+                    🆔
+
+                </div>
+
+                <h4>
+
+                    Aadhaar Card
+
+                </h4>
+
+                <p>
+
+                    PDF / JPG / PNG
+
+                </p>
+
+                <input
+                    type="file"
+                    accept=".pdf,.jpg,.jpeg,.png">
+
+            </div>
+
+            <!-- GST -->
+
+            <div class="upload-card">
+
+                <div class="upload-icon">
+
+                    📄
+
+                </div>
+
+                <h4>
+
+                    GST Certificate
+
+                </h4>
+
+                <p>
+
+                    PDF / JPG / PNG
+
+                </p>
+
+                <input
+                    type="file"
+                    accept=".pdf,.jpg,.jpeg,.png">
+
+            </div>
+
+            <!-- License -->
+
+            <div class="upload-card">
+
+                <div class="upload-icon">
+
+                    📜
+
+                </div>
+
+                <h4>
+
+                    Trade License
+
+                </h4>
+
+                <p>
+
+                    PDF / JPG / PNG
+
+                </p>
+
+                <input
+                    type="file"
+                    accept=".pdf,.jpg,.jpeg,.png">
+
+            </div>
+
+            <!-- Bank -->
+
+            <div class="upload-card">
+
+                <div class="upload-icon">
+
+                    🏦
+
+                </div>
+
+                <h4>
+
+                    Bank Passbook
+
+                </h4>
+
+                <p>
+
+                    PDF / JPG / PNG
+
+                </p>
+
+                <input
+                    type="file"
+                    accept=".pdf,.jpg,.jpeg,.png">
+
+            </div>
+
+            <!-- Signature -->
+
+            <div class="upload-card">
+
+                <div class="upload-icon">
+
+                    ✍️
+
+                </div>
+
+                <h4>
+
+                    Digital Signature
+
+                </h4>
+
+                <p>
+
+                    PDF / JPG / PNG
+
+                </p>
+
+                <input
+                    type="file"
+                    accept=".pdf,.jpg,.jpeg,.png">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+  <!-- ================= MODERN DECLARATION ================= -->
+
+<div class="modern-section">
+
+    <div class="section-left">
+
+        <div class="section-icon">
+
+            🛡️
+
+        </div>
+
+        <div>
+
+            <h3>
+
+                Declaration
+
+            </h3>
+
+            <p>
+
+                Please read the declaration carefully before submitting your trader registration.
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="section-right">
+
+        <div class="declaration-box">
+
+            <label class="modern-checkbox">
+
+                <input type="checkbox">
+
+                <span></span>
+
+                <p>
+
+                    I hereby declare that the information provided is true and correct to the best of my knowledge.
+
+                </p>
+
+            </label>
+
+            <label class="modern-checkbox">
+
+                <input type="checkbox">
+
+                <span></span>
+
+                <p>
+
+                    I agree to comply with all APCCB Carbon Credit Trading Rules and Regulations.
+
+                </p>
+
+            </label>
+
+            <label class="modern-checkbox">
+
+                <input type="checkbox">
+
+                <span></span>
+
+                <p>
+
+                    I authorize APCCB to verify my submitted documents and information.
+
+                </p>
+
+            </label>
+
+            <label class="modern-checkbox">
+
+                <input type="checkbox">
+
+                <span></span>
+
+                <p>
+
+                    I accept the Privacy Policy and Terms & Conditions of APCCB.
+
+                </p>
+
+            </label>
+
+        </div>
+
+        <!-- ================= SUMMARY ================= -->
+
+        <div class="summary-card">
+
+            <div class="summary-icon">
+
+                ✅
+
+            </div>
+
+            <div>
+
+                <h4>
+
+                    Registration Summary
+
+                </h4>
+
+                <p>
+
+                    Review all the entered information before submitting your trader registration.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+        <!-- ================= BUTTONS ================= -->
+
+        <div class="footer-buttons">
+
+            <button
+                class="back-btn"
+                (click)="back()">
+
+                ← Back
+
+            </button>
+
+            <button
+                class="next-btn"
+                (click)="next()">
+
+                Submit
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>

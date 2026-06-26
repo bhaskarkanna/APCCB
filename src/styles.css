@@ -1,0 +1,17 @@
+html,
+body{
+    margin:0;
+    padding:0;
+
+    width:100%;
+    overflow-x:hidden;
+
+    font-family:'Segoe UI',sans-serif;
+
+    background:linear-gradient(
+        135deg,
+        #dff6ff 0%,
+        #eefcf5 50%,
+        #d7efff 100%
+    );
+}

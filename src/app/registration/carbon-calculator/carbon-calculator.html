@@ -1,0 +1,272 @@
+<!-- ================= APCCB HEADER ================= -->
+
+<header class="app-header">
+
+    <div class="header-left">
+
+        <img
+            src="/images/apccb-logo.png"
+            alt="APCCB Logo">
+
+        <div>
+
+            <h1>Andhra Pradesh Carbon Credit Bank</h1>
+
+            <p>Carbon Credit Registration & Verification System</p>
+
+        </div>
+
+    </div>
+
+    <div class="portal-badge">
+
+        APCCB Portal
+
+    </div>
+
+</header>
+
+
+
+<!-- ================= CARBON CALCULATOR ================= -->
+
+<div class="wizard-card">
+
+    <div class="wizard-header">
+
+    <div>
+
+        <h2>
+            CARBON CALCULATOR
+        </h2>
+
+
+    </div>
+
+    <div class="progress-badge">
+
+        Step 6 of 8
+
+    </div>
+
+</div>
+
+<!-- ================= STEPPER INSIDE CARD ================= -->
+
+<div class="stepper-container">
+
+    <div class="step completed">
+        <div class="circle">✓</div>
+        <span>User Type</span>
+    </div>
+
+    <div class="line active-line"></div>
+
+    <div class="step completed">
+        <div class="circle">✓</div>
+        <span>Personal Details</span>
+    </div>
+
+    <div class="line active-line"></div>
+
+    <div class="step completed">
+        <div class="circle">✓</div>
+        <span>Address Details</span>
+    </div>
+
+    <div class="line active-line"></div>
+
+    <div class="step completed">
+        <div class="circle">✓</div>
+        <span>Land Details</span>
+    </div>
+
+    <div class="line active-line"></div>
+
+    <div class="step completed">
+        <div class="circle">✓</div>
+        <span>Plantation Details</span>
+    </div>
+
+    <div class="line active-line"></div>
+
+    <div class="step active">
+        <div class="circle">6</div>
+        <span>Calculator</span>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="step">
+        <div class="circle">7</div>
+        <span>Consent</span>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="step">
+        <div class="circle">8</div>
+        <span>Preview</span>
+    </div>
+
+
+</div>
+
+<div class="form-container">
+
+    <div class="form-container">
+
+        <div class="section-title">
+
+            <h3>Carbon Credit Estimation</h3>
+
+            <span>
+                Review your plantation information and estimated carbon credits
+            </span>
+
+        </div>
+
+
+
+        <div class="calculator-layout">
+
+            <!-- LEFT PANEL -->
+
+            <div class="summary-panel">
+
+                <div class="panel-header">
+
+                    🌿 Plantation Summary
+
+                </div>
+
+                <div class="summary-item">
+                    <span>Land Type</span>
+                    <strong>Open Land</strong>
+                </div>
+
+                <div class="summary-item">
+                    <span>Category</span>
+                    <strong>Tree Plantation</strong>
+                </div>
+
+                <div class="summary-item">
+                    <span>Total Trees</span>
+                    <strong>2500</strong>
+                </div>
+
+                <div class="summary-item">
+                    <span>Area</span>
+                    <strong>2.50 Acres</strong>
+                </div>
+
+                <div class="summary-item">
+                    <span>Average Age</span>
+                    <strong>3 Years</strong>
+                </div>
+
+            </div>
+
+            <!-- RIGHT PANEL -->
+
+            <div class="result-panel">
+
+                <div class="result-top">
+
+                    <div class="metric-card">
+
+                        <div class="metric-icon">
+                            🌳
+                        </div>
+
+                        <h4>
+                            Estimated CO₂ Absorbed
+                        </h4>
+
+                        <div class="metric-value">
+                            125.80
+                        </div>
+
+                        <p>
+                            Tonnes CO₂ / Year
+                        </p>
+
+                    </div>
+
+                    <div class="metric-card">
+
+                        <div class="metric-icon">
+                            ♻️
+                        </div>
+
+                        <h4>
+                            Carbon Credits
+                        </h4>
+
+                        <div class="metric-value">
+                            125.80
+                        </div>
+
+                        <p>
+                            tCO₂e
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="value-card">
+
+                    <div class="value-header">
+
+                        💰 Estimated Market Value
+
+                    </div>
+
+                    <div class="price">
+
+                        ₹ 15,096.00
+
+                    </div>
+
+                    <div class="rate">
+
+                        ₹ 120 per tCO₂e
+
+                    </div>
+
+                    <button class="recalculate-btn">
+
+                         Recalculate Estimation
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-buttons">
+
+            <button
+                class="back-btn"
+                (click)="back()">
+
+                ← Back
+
+            </button>
+
+            <button
+                class="next-btn"
+                (click)="next()">
+
+                Continue →
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>

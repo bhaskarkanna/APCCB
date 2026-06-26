@@ -1,0 +1,269 @@
+<!-- ================= APCCB HEADER ================= -->
+
+<header class="app-header">
+
+    <div class="header-left">
+
+        <img
+            src="/images/apccb-logo.png"
+            alt="APCCB Logo">
+
+        <div>
+
+            <h1>Andhra Pradesh Carbon Credit Bank</h1>
+
+            <p>Carbon Credit Registration & Verification System</p>
+
+        </div>
+
+    </div>
+
+    <div class="portal-badge">
+
+        APCCB Portal
+
+    </div>
+
+</header>
+
+<!-- ================= SUBMIT CARD ================= -->
+
+<div class="wizard-card">
+
+    <!-- HEADER -->
+
+    <div class="wizard-header">
+
+        <div>
+
+            <h2>APPLICATION SUBMISSION</h2>
+
+            <p>
+                Final submission of your APCCB registration application
+            </p>
+
+        </div>
+
+        <div class="progress-badge">
+
+            Step 10 of 10
+
+        </div>
+
+    </div>
+
+    <!-- STEPPER -->
+
+    <div class="stepper-container">
+
+        <div class="step completed">
+            <div class="circle">✓</div>
+            <span>User Type</span>
+        </div>
+
+        <div class="line active-line"></div>
+
+        <div class="step completed">
+            <div class="circle">✓</div>
+            <span>Personal</span>
+        </div>
+
+        <div class="line active-line"></div>
+
+        <div class="step completed">
+            <div class="circle">✓</div>
+            <span>Address</span>
+        </div>
+
+        <div class="line active-line"></div>
+
+        <div class="step completed">
+            <div class="circle">✓</div>
+            <span>Land</span>
+        </div>
+
+        <div class="line active-line"></div>
+
+        <div class="step completed">
+            <div class="circle">✓</div>
+            <span>Plantation</span>
+        </div>
+
+        <div class="line active-line"></div>
+
+        <div class="step completed">
+            <div class="circle">✓</div>
+            <span>Calculator</span>
+        </div>
+
+        <div class="line active-line"></div>
+
+        <div class="step completed">
+            <div class="circle">✓</div>
+            <span>Consent</span>
+        </div>
+
+        <div class="line active-line"></div>
+
+        <div class="step completed">
+            <div class="circle">✓</div>
+            <span>Preview</span>
+        </div>
+
+        <div class="line active-line"></div>
+
+        <div class="step active">
+            <div class="circle">10</div>
+            <span>Submit</span>
+        </div>
+
+    </div>
+
+    <!-- BODY -->
+
+    <div class="form-container">
+
+        <div class="section-title">
+
+            <h3>
+                Ready For Submission
+            </h3>
+
+            <span>
+                Review final verification status before submitting
+            </span>
+
+        </div>
+
+        <!-- APPLICATION SUMMARY -->
+
+        <div class="summary-card">
+
+            <h4>📄 Application Summary</h4>
+
+            <div class="summary-grid">
+
+                <div>
+                    <label>Application ID</label>
+                    <strong>APCCB-2026-000001</strong>
+                </div>
+
+                <div>
+                    <label>Applicant Name</label>
+                    <strong>Bhaskar</strong>
+                </div>
+
+                <div>
+                    <label>District</label>
+                    <strong>Anantapur</strong>
+                </div>
+
+                <div>
+                    <label>Survey Number</label>
+                    <strong>125/A</strong>
+                </div>
+
+                <div>
+                    <label>Plantation Type</label>
+                    <strong>Tree Plantation</strong>
+                </div>
+
+                <div>
+                    <label>Estimated Credits</label>
+                    <strong>125.80 tCO₂e</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- VERIFICATION STATUS -->
+
+        <div class="verification-card">
+
+            <h4>✅ Verification Status</h4>
+
+            <ul>
+
+                <li>✓ Personal Details Verified</li>
+
+                <li>✓ Address Details Verified</li>
+
+                <li>✓ Land Information Verified</li>
+
+                <li>✓ Plantation Details Verified</li>
+
+                <li>✓ Carbon Calculation Completed</li>
+
+                <li>✓ Consent Accepted</li>
+
+            </ul>
+
+        </div>
+
+        <!-- FINAL CONSENT -->
+
+        <div class="final-consent">
+
+            <input
+                type="checkbox"
+                id="submitConfirm">
+
+            <label for="submitConfirm">
+
+                I confirm that all information provided is true and accurate.
+                I agree to submit this application to APCCB.
+
+            </label>
+
+        </div>
+
+        <!-- SUCCESS CARD -->
+
+        <div class="success-card">
+
+            <div class="success-icon">
+
+                🎉
+
+            </div>
+
+            <h3>
+
+                Ready To Submit
+
+            </h3>
+
+            <p>
+
+                Your application is complete and ready for APCCB verification.
+
+            </p>
+
+        </div>
+
+        <!-- BUTTONS -->
+
+        <div class="footer-buttons">
+
+            <button
+                class="back-btn"
+                (click)="back()">
+
+                ← Back
+
+            </button>
+
+            <button
+                class="next-btn"
+                (click)="submitApplication()">
+
+                Submit Application →
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,448 @@
+<!-- ================= APCCB HEADER ================= -->
+
+<header class="app-header">
+
+    <div class="header-left">
+
+        <img
+            src="/images/apccb-logo.png"
+            alt="APCCB Logo">
+
+        <div>
+
+            <h1>
+                Andhra Pradesh Carbon Credit Bank
+            </h1>
+
+            <p>
+                Carbon Credit Registration & Verification System
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="portal-badge">
+
+        APCCB Portal
+
+    </div>
+
+</header>
+
+<!-- ================= SINGLE WIZARD CARD ================= -->
+
+<div class="wizard-card">
+
+    <!-- ================= HEADER ================= -->
+
+    <div class="wizard-header">
+
+        <div>
+
+            <h2 class="section-title center-title">
+                LAND & SURVEY DETAILS
+            </h2>
+
+
+        </div>
+
+        <div class="progress-badge">
+
+            Step 4 of 8
+
+        </div>
+
+    </div>
+
+    <!-- ================= STEPPER ================= -->
+
+    <div class="stepper-container">
+
+        <div class="step completed">
+            <div class="circle">✓</div>
+            <span>User Type</span>
+        </div>
+
+        <div class="line active-line"></div>
+
+        <div class="step completed">
+            <div class="circle">✓</div>
+            <span>Personal Details</span>
+        </div>
+
+        <div class="line active-line"></div>
+
+        <div class="step completed">
+            <div class="circle">✓</div>
+            <span>Address Details</span>
+        </div>
+
+        <div class="line active-line"></div>
+
+        <div class="step active">
+            <div class="circle">4</div>
+            <span>Land Details</span>
+        </div>
+
+
+        <div class="line"></div>
+
+        <div class="step">
+            <div class="circle">5</div>
+            <span>Plantation Details</span>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="step">
+            <div class="circle">6</div>
+            <span>Calculator</span>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="step">
+            <div class="circle">7</div>
+            <span>Consent</span>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="step">
+            <div class="circle">8</div>
+            <span>Preview</span>
+        </div>
+
+
+    </div>
+
+    <!-- ================= BODY ================= -->
+
+    <div class="wizard-body">
+
+        <div class="section-title center-title">
+
+            <h3>
+                Land Registration Information
+            </h3>
+
+            <span>
+                Enter survey details and land dimensions for carbon credit registration
+            </span>
+
+        </div>
+
+        <!-- ================= FORM ================= -->
+
+        <div class="form-grid">
+
+            <div class="form-group">
+
+                <label>
+                    Survey Number *
+                </label>
+
+                <input
+                    type="text"
+                    placeholder="Enter survey number">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>
+                    Sub Division Number *
+                </label>
+
+                <input
+                    type="text"
+                    placeholder="Enter sub division number">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>
+                    Total Area *
+                </label>
+
+                <input
+                    type="text"
+                    placeholder="Enter total area">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>
+                    Dimension / Unit *
+                </label>
+
+                <select>
+
+                    <option>
+                        Select Unit
+                    </option>
+
+                    <option>
+                        Acre
+                    </option>
+
+                    <option>
+                        Hectare
+                    </option>
+
+                    <option>
+                        Sq.ft
+                    </option>
+
+                    <option>
+                        Guntha
+                    </option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+      <!-- ================= LAND PHOTO ================= -->
+
+            <div class="land-upload-container">
+
+                <div class="upload-header">
+
+                    <div class="upload-icon">
+                        🌿
+                    </div>
+
+                    <h4>
+                        Upload Land Photograph
+                    </h4>
+
+                    <p>
+                        Capture or upload a clear photograph of your land for APCCB verification
+                    </p>
+
+                </div>
+
+                <div class="upload-options">
+
+                    <!-- Camera Card -->
+
+                    <div class="upload-option camera-option">
+
+                        <div class="option-icon">
+                            📷
+                        </div>
+
+                        <div class="option-content">
+
+                            <h5>
+                                Take Photo
+                            </h5>
+
+                            <span>
+                                Open camera to capture
+                            </span>
+
+                        </div>
+
+                        <button
+                            type="button"
+                            class="capture-btn"
+                            (click)="capturePhoto()">
+
+                            Open Camera
+
+                        </button>
+
+                    </div>
+
+                    <div class="or-divider">
+
+                        OR
+
+                    </div>
+
+                    <!-- Gallery Card -->
+
+                    <div class="upload-option gallery-option">
+
+                        <div class="option-icon">
+                            ☁️
+                        </div>
+
+                        <div class="option-content">
+
+                            <h5>
+                                Choose from Gallery
+                            </h5>
+
+                            <span>
+                                Upload from device
+                            </span>
+
+                        </div>
+
+                        <label class="gallery-btn">
+
+                            Choose File
+
+                            <input
+                                #cameraInput
+                                type="file"
+                                accept="image/*"
+                                hidden
+                                (change)="onFileSelected($event)">
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+                <!-- Location -->
+
+                <div class="location-row">
+
+                    <div class="location-left">
+
+                        <h5>
+                            📍 Enable Location
+                        </h5>
+
+                        <span>
+                            We will capture location (GPS) along with the photo
+                        </span>
+
+                    </div>
+
+                    <div class="location-status">
+
+                        @if(latitude && longitude){
+
+                        <span class="status-success">
+
+                            Captured
+
+                        </span>
+
+                        }
+
+                        @else {
+
+                        <span class="status-pending">
+
+                            Not Captured
+
+                        </span>
+
+                        }
+
+                    </div>
+
+                </div>
+
+                <!-- GPS Details -->
+
+                @if(latitude && longitude){
+
+                <div class="gps-card">
+
+                    <div>
+
+                        <strong>Latitude:</strong>
+
+                        {{ latitude }}
+
+                    </div>
+
+                    <div>
+
+                        <strong>Longitude:</strong>
+
+                        {{ longitude }}
+
+                    </div>
+
+                </div>
+
+                }
+
+                <!-- ================= LIVE CAMERA ================= -->
+
+                <div class="camera-live-section">
+
+                    <video
+                        id="cameraVideo"
+                        autoplay
+                        playsinline
+                        muted>
+                    </video>
+
+                    <button
+                        type="button"
+                        class="capture-btn live-capture-btn"
+                        (click)="takeSnapshot()">
+
+                          Capture Photo
+
+                    </button>
+
+                    <canvas
+                        id="snapshotCanvas"
+                        hidden>
+                    </canvas>
+
+                </div>
+
+                <!-- ================= IMAGE PREVIEW ================= -->
+
+                @if(imagePreview){
+
+                <div class="preview-card">
+
+                    <h5>
+                        Captured Land Photograph
+                    </h5>
+
+                    <img
+                        [src]="imagePreview"
+                        alt="Land Photo">
+
+                </div>
+
+                }
+
+                <div class="security-note">
+
+                    🔒 Location will be used only for verification and is 100% secure.
+
+                </div>
+        <!-- ================= BUTTONS ================= -->
+
+        <div class="footer-buttons">
+
+            <button
+                class="back-btn"
+                (click)="back()">
+
+                ← Back
+
+            </button>
+
+            <button
+                class="next-btn"
+                (click)="next()">
+
+                Continue →
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>

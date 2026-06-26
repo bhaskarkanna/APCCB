@@ -1,0 +1,364 @@
+<!-- ================= APCCB HEADER ================= -->
+
+<header class="app-header">
+
+    <div class="header-left">
+
+        <img
+            src="/images/apccb-logo.png"
+            alt="APCCB Logo">
+
+        <div>
+
+            <h1>Andhra Pradesh Carbon Credit Bank</h1>
+
+            <p>Carbon Credit Registration & Verification System</p>
+
+        </div>
+
+    </div>
+
+    <div class="portal-badge">
+
+        APCCB Portal
+
+    </div>
+
+</header>
+
+<!-- ================= MAIN CARD ================= -->
+
+<div class="wizard-card">
+
+    <!-- ================= HEADER ================= -->
+
+    <div class="wizard-header">
+
+    <div>
+
+        <h2>
+            PLANTATION DETAILS & QUANTITY
+        </h2>
+
+
+    </div>
+
+    <div class="progress-badge">
+
+        Step 5 of 8
+
+    </div>
+
+</div>
+
+    <!-- ================= STEPPER ================= -->
+
+    <div class="stepper-container">
+
+        <div class="step completed">
+            <div class="circle">✓</div>
+            <span>User Type</span>
+        </div>
+
+        <div class="line active-line"></div>
+
+        <div class="step completed">
+            <div class="circle">✓</div>
+            <span>Personal Details</span>
+        </div>
+
+        <div class="line active-line"></div>
+
+        <div class="step completed">
+            <div class="circle">✓</div>
+            <span>Address Details</span>
+        </div>
+
+        <div class="line active-line"></div>
+
+        <div class="step completed">
+            <div class="circle">✓</div>
+            <span>Land Details</span>
+        </div>
+
+
+        <div class="line active-line"></div>
+
+        <div class="step active">
+            <div class="circle">5</div>
+            <span>Plantation</span>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="step">
+            <div class="circle">6</div>
+            <span>Calculator</span>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="step">
+            <div class="circle">7</div>
+            <span>Consent</span>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="step">
+            <div class="circle">8</div>
+            <span>Preview</span>
+        </div>
+
+
+    </div>
+
+    <!-- ================= BODY ================= -->
+
+    <div class="wizard-body">
+
+        <!-- ================= SECTION TITLE ================= -->
+
+        <div class="section-title center-title">
+
+            <h3>
+                Plantation Information
+            </h3>
+
+            <span>
+                Select land type, plantation category and quantity details
+            </span>
+
+        </div>
+
+        <!-- ================= LAND TYPE ================= -->
+
+        <div class="form-group">
+
+            <label>
+                Land Type / Location
+            </label>
+
+        </div>
+
+        <div class="icon-grid">
+
+    <div
+        class="icon-card"
+        [class.active]="selectedLandType === 'Open Land'"
+        (click)="selectLandType('Open Land')">
+
+        <div class="card-icon">🌱</div>
+
+        <h4>Open Land</h4>
+
+        <p>Vacant plantation area</p>
+
+    </div>
+
+    <div
+        class="icon-card"
+        [class.active]="selectedLandType === 'Fish Pond'"
+        (click)="selectLandType('Fish Pond')">
+
+        <div class="card-icon">🐟</div>
+
+        <h4>Fish Pond</h4>
+
+        <p>Aquaculture area</p>
+
+    </div>
+
+    <div
+        class="icon-card"
+        [class.active]="selectedLandType === 'Govt Land'"
+        (click)="selectLandType('Govt Land')">
+
+        <div class="card-icon">🏛️</div>
+
+        <h4>Govt Land</h4>
+
+        <p>Government allocated land</p>
+
+    </div>
+
+    <div
+        class="icon-card"
+        [class.active]="selectedLandType === 'House'"
+        (click)="selectLandType('House')">
+
+        <div class="card-icon">🏠</div>
+
+        <h4>House</h4>
+
+        <p>Residential plantation</p>
+
+    </div>
+
+</div>
+
+       <!-- ================= CATEGORY ================= -->
+
+<div class="form-group mt-4">
+
+    <label>
+        Plantation Type / Category
+    </label>
+
+</div>
+
+<div class="icon-grid">
+
+    <div
+        class="icon-card"
+        [class.active]="selectedPlantationType === 'Tree'"
+        (click)="selectPlantationType('Tree')">
+
+        <div class="card-icon">🌳</div>
+
+        <h4>Tree</h4>
+
+        <p>Individual tree plantation</p>
+
+    </div>
+
+    <div
+        class="icon-card"
+        [class.active]="selectedPlantationType === 'Crop'"
+        (click)="selectPlantationType('Crop')">
+
+        <div class="card-icon">🌾</div>
+
+        <h4>Crop</h4>
+
+        <p>Agricultural crops</p>
+
+    </div>
+
+    <div
+        class="icon-card"
+        [class.active]="selectedPlantationType === 'Garden'"
+        (click)="selectPlantationType('Garden')">
+
+        <div class="card-icon">🌿</div>
+
+        <h4>Garden</h4>
+
+        <p>Garden plantation</p>
+
+    </div>
+
+    <div
+        class="icon-card"
+        [class.active]="selectedPlantationType === 'Mangrove'"
+        (click)="selectPlantationType('Mangrove')">
+
+        <div class="card-icon">🌱</div>
+
+        <h4>Mangrove</h4>
+
+        <p>Coastal plantation</p>
+
+    </div>
+
+    <div
+        class="icon-card"
+        [class.active]="selectedPlantationType === 'Other'"
+        (click)="selectPlantationType('Other')">
+
+        <div class="card-icon">➕</div>
+
+        <h4>Other</h4>
+
+        <p>Custom plantation type</p>
+
+    </div>
+
+</div>
+
+        <!-- ================= QUANTITY DETAILS ================= -->
+
+
+        <div class="form-grid">
+
+            <div class="form-group">
+
+                <label>
+                    Number of Trees / Plants
+                </label>
+
+                <input
+                    type="number"
+                    placeholder="Enter quantity">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>
+                    Age (Years)
+                </label>
+
+                <input
+                    type="number"
+                    placeholder="Enter age">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>
+                    Area Under Plantation
+                </label>
+
+                <input
+                    type="number"
+                    placeholder="Enter area">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>
+                    Unit
+                </label>
+
+                <select>
+
+                    <option>Acre</option>
+                    <option>Hectare</option>
+                    <option>Sq.ft</option>
+                    <option>Guntha</option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= BUTTONS ================= -->
+
+        <div class="footer-buttons">
+
+            <button
+                class="back-btn"
+                (click)="back()">
+
+                ← Back
+
+            </button>
+
+            <button
+                class="next-btn"
+                (click)="next()">
+
+                Continue →
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,303 @@
+<!-- ================= APCCB HEADER ================= -->
+
+<header class="app-header">
+
+    <div class="header-left">
+
+        <img
+            src="/images/apccb-logo.png"
+            alt="APCCB Logo">
+
+        <div>
+
+            <h1>Andhra Pradesh Carbon Credit Bank</h1>
+
+            <p>Carbon Credit Registration & Verification System</p>
+
+        </div>
+
+    </div>
+
+    <div class="portal-badge">
+
+        APCCB Portal
+
+    </div>
+
+</header>
+
+
+<!-- ================= PREVIEW CARD ================= -->
+
+<div class="wizard-card">
+
+    <!-- ================= HEADER ================= -->
+
+    <div class="wizard-header">
+
+        <div>
+
+            <h2>
+                PREVIEW & SUBMIT
+            </h2>
+
+
+        </div>
+
+        <div class="progress-badge">
+
+            Step 8 of 8
+
+        </div>
+
+    </div>
+
+    <!-- ================= STEPPER ================= -->
+
+    <div class="stepper-container">
+
+        <div class="step completed">
+            <div class="circle">✓</div>
+            <span>User Type</span>
+        </div>
+
+        <div class="line active-line"></div>
+
+        <div class="step completed">
+            <div class="circle">✓</div>
+            <span>Personal</span>
+        </div>
+
+        <div class="line active-line"></div>
+
+        <div class="step completed">
+            <div class="circle">✓</div>
+            <span>Address</span>
+        </div>
+
+        <div class="line active-line"></div>
+
+        <div class="step completed">
+            <div class="circle">✓</div>
+            <span>Land</span>
+        </div>
+
+       
+        <div class="line active-line"></div>
+
+        <div class="step completed">
+            <div class="circle">✓</div>
+            <span>Plantation</span>
+        </div>
+
+        <div class="line active-line"></div>
+
+        <div class="step completed">
+            <div class="circle">✓</div>
+            <span>Calculator</span>
+        </div>
+
+        <div class="line active-line"></div>
+
+        <div class="step completed">
+            <div class="circle">✓</div>
+            <span>Consent</span>
+        </div>
+
+        <div class="line active-line"></div>
+
+        <div class="step active">
+            <div class="circle">8</div>
+            <span>Preview</span>
+        </div>
+
+
+    </div>
+
+    <div class="form-container">
+
+        <!-- PERSONAL -->
+
+        <div class="review-card">
+
+            <div class="review-header">
+
+                <h4>👤 Personal Details</h4>
+
+                    <button
+                        type="button"
+                        class="edit-btn"
+                        (click)="editPersonal()">
+
+                        Edit
+
+                     </button>
+
+            </div>
+
+            <div class="review-grid">
+
+                <div><label> FULL NAME</label><strong>Bhaskar</strong></div>
+                <div><label> GENDER</label><strong>Male</strong></div>
+                <div><label>MOBILE NUMBER</label><strong>9876543210</strong></div>
+                <div><label>AADHAAR NUMBER</label><strong>1234 5678 9012</strong></div>
+                <div><label>PAN NUMBER</label><strong>ABCDE1234</strong></div>
+
+            </div>
+
+        </div>
+
+        <!-- ADDRESS -->
+
+        <div class="review-card">
+
+            <div class="review-header">
+
+                <h4>📍 Address Details</h4>
+
+                 <button
+                    type="button"
+                    class="edit-btn"
+                    (click)="editAddress()">
+
+                    Edit
+
+                </button>
+
+            </div>
+
+            <div class="review-grid">
+
+                <div><label>STATE</label><strong>Andhra Pradesh</strong></div>
+                <div><label>DISTRICT</label><strong>Anantapur</strong></div>
+                <div><label>MANDAL</label><strong>Dharmavaram</strong></div>
+                <div><label>VILLAGE</label><strong>ABCDEF</strong></div>
+                <div><label>PINCODE</label><strong>515671</strong></div>
+
+            </div>
+
+        </div>
+
+        <!-- LAND -->
+
+        <div class="review-card">
+
+            <div class="review-header">
+
+                <h4>🌾 Land & Survey Details</h4>
+
+                <button 
+                    type="button"
+                    class="edit-btn"
+                    (click)="editLand()">
+
+                    Edit
+                    
+                </button>
+
+            </div>
+
+            <div class="review-grid">
+
+                <div><label>SURVEY NO</label><strong>125</strong></div>
+                <div><label>SUB DIVISION</label><strong>125/A</strong></div>
+                <div><label>AREA</label><strong>2.5 Acres</strong></div>
+                <div><label>UNIT</label><strong>Acre</strong></div>
+
+            </div>
+
+        </div>
+
+        <!-- PLANTATION -->
+
+        <div class="review-card">
+
+            <div class="review-header">
+
+                <h4>🌳 Plantation Details</h4>
+
+                <button 
+                    type="button"
+                    class="edit-btn"
+                    (click)="editPlantation()">
+                    Edit
+                </button>
+
+            </div>
+
+            <div class="review-grid">
+
+                <div><label>CATEGORY</label><strong>Tree Plantation</strong></div>
+                <div><label>TOTAL TREES</label><strong>2500</strong></div>
+                <div><label>AREA</label><strong>2.5 Acres</strong></div>
+                <div><label>AGE</label><strong>3 Years</strong></div>
+
+            </div>
+
+        </div>
+
+        <!-- CARBON RESULT -->
+
+        <div class="result-summary">
+
+            <h3>♻ Carbon Credit Estimation</h3>
+
+            <div class="result-grid">
+
+                <div class="result-box">
+
+                    <h4>CO₂ Absorbed</h4>
+
+                    <span>125.80</span>
+
+                    <p>Tonnes / Year</p>
+
+                </div>
+
+                <div class="result-box">
+
+                    <h4>Carbon Credits</h4>
+
+                    <span>125.80</span>
+
+                    <p>tCO₂e</p>
+
+                </div>
+
+                <div class="result-box">
+
+                    <h4>Market Value</h4>
+
+                    <span>₹15,096</span>
+
+                    <p>Estimated Value</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-buttons">
+
+            <button
+                class="back-btn"
+                (click)="back()">
+
+                ← Back
+
+            </button>
+
+            <button
+                class="next-btn"
+                (click)="next()">
+
+                Final Submit →
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
